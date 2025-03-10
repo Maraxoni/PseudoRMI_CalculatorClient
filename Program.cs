@@ -11,7 +11,7 @@ namespace PseudoRMI_CalculatorClient
             // Communication method
             BasicHttpBinding httpBinding = new BasicHttpBinding();
             // Defining address
-            System.ServiceModel.EndpointAddress httpEndpoint = new System.ServiceModel.EndpointAddress("http://localhost:5000/CalculatorService");
+            System.ServiceModel.EndpointAddress httpEndpoint = new System.ServiceModel.EndpointAddress("http://192.168.50.183:8080/CalculatorService");
             // Dynamically creating channels that implement interface
             ChannelFactory<ICalculatorService> myChannelFactory = new ChannelFactory<ICalculatorService>(httpBinding, httpEndpoint);
             
